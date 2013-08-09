@@ -37,7 +37,7 @@ app.use(express.static(__dirname + '/public'));
 //app.listen(port); //no socket.io
 //Configure socket.io
 var io = require('socket.io').listen(app.listen(port));
-console.log('Listening on port ' + port);
+console.log('Listening on port -' + port);
 //if we are using Heroku or similar we need to fall back to xhr polling :( due to using the free hosting
 if (!local) {
 	io.configure(function () { 
