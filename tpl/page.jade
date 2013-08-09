@@ -1,0 +1,15 @@
+!!!
+html
+	head
+		title= "My Node base"
+		script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+		script
+			var local = #{local};
+		script(src='/socket.io/socket.io.js')
+		//- script(src='http://boiling-beyond-6485.herokuapp.com/socket.io/socket.io.js')
+		//- script(src='/chat.js')
+		script(src='/socketExample.js')
+		include ../public/style.css
+	body
+		#display
+			

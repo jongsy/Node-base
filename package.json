@@ -1,0 +1,11 @@
+{
+	"name":"node-Base",
+	"version":"0.0.0",
+	"description":"Node Base build - includes express, socket.io & jade",
+	"dependencies": {
+		"socket.io": "latest",
+        "express": "latest",
+        "jade": "latest"
+	},
+	"author":"JONGSY"
+}
