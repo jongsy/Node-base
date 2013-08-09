@@ -49,6 +49,9 @@ if (!local) {
 //Configure Sockets
 io.sockets.on('connection', function (socket) {
 	console.log('connection');
+	socket.on('styleUpdate', function (data) {
+		io.sockets.emit('update', data);
+	})
 })
 
 
